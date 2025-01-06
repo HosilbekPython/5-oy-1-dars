@@ -10,7 +10,7 @@ DROP TABLE IF EXISTS jadvalar;
 
 CREATE TABLE jadvalar(
 	user_id SERIAL PRIMARY KEY,
-	ism VARCHAR(30) UNIQUE,
+	ism VARCHAR(30) NOT NULL,
 	yosh INTEGER ,
 	manzil VARCHAR(50)
 );
@@ -30,7 +30,7 @@ DROP TABLE IF EXISTS jadvlar2;
 
 CREATE TABLE IF NOT EXISTS jadvlar2(
 	user_id SERIAL NOT NULL UNIQUE,
-	nom VARCHAR(25) UNIQUE,
+	nom VARCHAR(25) NOT NULL,
 	narx INTEGER ,
 	tavsif VARCHAR(50)
 );
@@ -77,7 +77,7 @@ DROP TABLE IF EXISTS jadvalar4;
 
 CREATE TABLE IF NOT EXISTS jadvalar4(
 	user_id SERIAL PRIMARY KEY,
-	ism VARCHAR(30) UNIQUE,
+	ism VARCHAR(30) NOT NULL,
 	lavozimi VARCHAR(50),
 	yillik_ish_haqi INTEGER
 );
@@ -102,7 +102,7 @@ DROP TABLE IF EXISTS jadvalar5;
 
 CREATE TABLE jadvalar5(
 	user_id SERIAL PRIMARY KEY,
-	kompaniya_nomi VARCHAR(30) UNIQUE,
+	kompaniya_nomi VARCHAR(30) NOT NULL,
 	telefon_raqam VARCHAR(18),
 	manzil VARCHAR(30)
 	
